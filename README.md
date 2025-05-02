@@ -1,236 +1,219 @@
-# CUTM College Enterprise Resource Planner
-This is a CUTM College Enterprise Resource Planner (ERP) Developed by me and my project partners for my college.
-We use Python/Django Framwork for building an fully functional web application. (If facing problem!! : put discussion)
+# Django eCommerce Website
 
-## Demo
+<div align="center">
 
-For viewing the home page of student or staff you must have required credentials given below
+[![GitHub issues](https://img.shields.io/github/issues/atulguptag/Django-eCommerce-Website?color=pink&logo=github)](https://github.com/atulguptag/Django-eCommerce-Website/issues)
 
-For Student login -
-Email : `student@student.com`
-Password : `student@erp`
+![GitHub forks](https://img.shields.io/github/forks/atulguptag/Django-eCommerce-Website?logo=git)
+![GitHub Repo stars](https://img.shields.io/github/stars/atulguptag/Django-eCommerce-Website)
+[![Contributors](https://img.shields.io/github/contributors/atulguptag/Django-eCommerce-Website?style=plastic&?color=2b9348)](https://github.com/atulguptag/Django-eCommerce-Website/contributors)
+[![Access Here](https://img.shields.io/badge/Access-Here-brightgreen?style=plastic)](https://djangoecommercewebsite.pythonanywhere.com/)
+![GitHub License](https://img.shields.io/github/license/atulguptag/Django-eCommerce-Website?style=plastic&link=https%3A%2F%2Fgithub.com%2Fatulguptag%2FDjango-eCommerce-Website%2Fblob%2Fmain%2FLICENSE)
 
-For Staff login -
-Email : `staff@staff.com`
-Password : `staff@erp`
+</div>
+
+This project is a full-fledged eCommerce website built using Django, a high-level Python web framework. It includes essential features such as user authentication, product browsing, cart management, checkout process, payment integration, and more. The website is designed to be robust, scalable, and user-friendly, providing a seamless shopping experience for customers.
+
+## Table of Contents
+
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- **User Authentication:** Secure user registration, login, reset password, and profile management.
+- **Product Catalog:** Browse and search products with detailed descriptions and images.
+- **Shopping Cart:** Add, update, and remove items from the cart seamlessly.
+- **Checkout Process:** Smooth checkout flow with order summary and address management.
+- **Payment Integration:** Integrated with Razorpay for secure online payments.
+- **Order Management:** View order history and status updates.
+- **Responsive Design:** Mobile-friendly UI ensuring a consistent experience across devices.
+- **Admin Panel:** Manage products, orders, and users efficiently through Django's admin interface.
 
 ## Register for Facebook App ID and Razorpay API
 
 Facebook: https://developers.facebook.com/
 
-Razorpay: 
+Razorpay:
 
+## Screenshots
 
-### A. Admin Users Can
-1. See Overall Summary Charts of Students Performances, Staff Performances, Courses, Subjects, Leave, etc.
-2. Manage Staff (Add, Update and Delete)
-3. Manage Students (Add, Update and Delete)
-4. Manage Course (Add, Update and Delete)
-5. Manage Subjects (Add, Update and Delete)
-6. Manage Sessions (Add, Update and Delete)
-7. View Student Attendance
-8. Review and Reply Student/Staff Feedback
-9. Review (Approve/Reject) Student/Staff Leave
+### Home Page
 
-### B. Staff/Teachers Can
-1. See the Overall Summary Charts related to their students, their subjects, leave status, etc.
-2. Take/Update Students Attendance
-3. Add/Update Result
-4. Apply for Leave
-5. Send Feedback to HOD
+![Homepage Screenshot](Screenshots/Home-Django-Ecommerce-Site.png)
 
-### C. Students Can
-1. See the Overall Summary Charts related to their attendance, their subjects, leave status, etc.
-2. View Attendance
-3. View Result
-4. Apply for Leave
-5. Send Feedback to HOD
+### Wishlist Page
 
+![Wishlist Screenshot](Screenshots/Wishlist.png)
 
-## Support Developer
-1. Add a Star 🌟  to this 👆 Repository
-2. Follow on Github & LinkedIn 
+### Order History Page
 
+![Order-History Screenshot](Screenshots/Order-History.png)
 
-## How to Install and Run this project?
+### Order Details Page
 
-### Pre-Requisites:
-1. Install Git Version Control
-[ https://git-scm.com/ ]
+![Order-Deatils Screenshot](Screenshots/Order-Details.png)
 
-2. Install Python Latest Version
-[ https://www.python.org/downloads/ ]
+### Contact-Us Page
 
-3. Install Pip (Package Manager)
-[ https://pip.pypa.io/en/stable/installing/ ]
+![Contact-Us Screenshot](Screenshots/Contact-Us.png)
 
-*Alternative to Pip is Homebrew*
+### About-Us Page
 
-### Installation
-**1. Create a Folder where you want to save the project**
+![About-Us Screenshot](Screenshots/About-Us.png)
 
-**2. Create a Virtual Environment and Activate**
+### Product Page
 
-If you have conda installed in your system
-```
-$  conda env create -f college-erp.yml
-```
+![Product Page Screenshot](Screenshots/Product-Image.png)
 
-Activate created conda environment
-```
-$  conda activate Django-env
-```
+### Shopping Cart Page
 
-Else Install Virtual Environment First
-```
-$  pip install virtualenv
-```
+![Cart Page Screenshot](Screenshots/Shopping-Cart.png)
 
-Create Virtual Environment
+### Payment Testing View Page
 
-For Windows
-```
-$  python -m venv venv_name
-```
-For Mac
-```
-$  python3 -m venv venv
-```
-For Linux
-```
-$  virtualenv .
-```
+![Payment Testing Page Screenshot](Screenshots/Payment-Testing-View.png)
 
-Activate Virtual Environment
+### Payment Success Page
 
-For Windows
-```
-$  source venv/scripts/activate
-```
+![Payment Success Page Screenshot](Screenshots/Payment-Successful.png)
 
-For Mac
-```
-$  source venv/bin/activate
-```
+### Login Page
 
-For Linux
-```
-$  source bin/activate
-```
+![Login Page Screenshot](Screenshots/Login.png)
 
-**3. Clone this project**
-```
-$  git clone https://github.com/KiranKumarMalik/College-ERP.git
-```
+### Register Page
 
-Then, Enter the project
-```
-$  cd College-ERP
-```
+![Register Page Screenshot](Screenshots/Register.png)
 
-**4. Install Requirements from 'requirements.txt'**
-```python
-$  pip3 install -r requirements.txt
-```
-## Use a verified SMTP library like django-anymail
-```
-$  pip install django-anymail
-```
+### Reset Password Page
 
-**5. Add the hosts**
+![Reset Password Page Screenshot](Screenshots/Password-Reset-Form.png)
 
-- Got to settings.py file 
-- Then, On allowed hosts, Use **[]** as your host. 
-```python
-ALLOWED_HOSTS = []
-```
-*Do not use the fault allowed settings in this repo. It has security risk!*
+### Profile Page
 
+![Profile Page Screenshot](Screenshots/Profile.png)
 
-**6. Now Run Server**
+### Shipping Address Page
 
-Command for PC:
-```python
-$ python manage.py runserver
-```
+![Shipping Address Page Screenshot](Screenshots/Shipping-Address.png)
 
-Command for Mac:
-```python
-$ python3 manage.py runserver
-```
+### Change Password View
 
-Command for Linux:
-```python
-$ python3 manage.py runserver
-```
+![Change Password Page Screenshot](Screenshots/Change-Password-Page.png)
 
-**7. Login Credentials**
+## Technologies Used
 
-Create Super User (HOD)
-Command for PC:
-```
-$  python manage.py createsuperuser
-```
+- **Django:** Python-based web framework for backend development.
+- **HTML/CSS/JavaScript:** Frontend development for a responsive and interactive UI.
+- **Razorpay API:** Payment gateway integration for secure transactions.
+- **Bootstrap:** Frontend framework for responsive design and UI components.
 
-Command for Mac:
-```
-$  python3 manage.py createsuperuser
-```
+## Setup Instructions
 
-Command for Linux:
-```
-$  python3 manage.py createsuperuser
-```
+To run this project locally, follow these steps:
 
-## Project's Journey
-- [x] Admin/Staff/Student Login
-- [x] Add and Edit Course
-- [x] Add and Edit Staff
-- [x] Add and Edit Student
-- [x] Add and Edit Subject
-- [x] Upload Staff's Picture
-- [x] Upload Student's Picture
-- [x] Sidebar Active Status
-- [x] Named URLs
-- [x] Model Forms for adding student
-- [x] Model Forms for all
-- [x] Views Permission (MiddleWareMixin)
-- [x] Attendance and Update Attendance
-- [x] Password Reset Via Email
-- [x] Apply For Leave
-- [x] Students Can Check Attendance
-- [x] Check Email Availability
-- [x] Reply to Leave Applications
-- [x] Reply to Feedback
-- [x] Admin View Attendance
-- [x] Password Change for Admin, Staff and Students using *set_password()*
-- [x] Admin Profile Edit
-- [x] Staff Profile Edit
-- [x] Student Profile Edit
-- [x] Student Dashboard Fixed
-- [x] Passing Page Title From View  - Improved
-- [x] Staff Dashboard Fixed
-- [x] Admin Dashboard Fixed
-- [x] Staff Add Student's Result
-- [x] Staff Edit Result Using CBVs (Class Based Views)
-- [x] Google CAPTCHA
-- [x] Student View Result
-- [x] Change all links to be dynamic
-- [x] Code Restructure - Very Important
+1. **Clone the repository:**
 
+   ```bash
+   git clone https://github.com/atulguptag/Django-eCommerce-Website.git
+   cd Django-eCommerce-Website
+   ```
 
-## Login
-- username: email
-- Password: password
+2. **Create a virtual environment:**
+   ```bash
+   python -m venv venv
+   ```
+3. **Activate the virtual environment:**
 
-![login](https://github.com/KiranKumarMalik/College-ERP/blob/2bf3152964437e4bf1b4f318b28ca898b1856912/ss/Screenshot%202025-04-22%20205658.png)
+   - On Windows:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```bash
+     source venv/bin/activate
+     ```
 
-## Login
+4. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Admin Login
-- username: Superuser mailid
-- Password: superuser password
+### `Note`: Before running `python manage.py migrate`, first create `.env` file in your project root, and update it with the same as `.env.example`
 
-Dashboard
+- Then, add `SECRET_KEY` and `DEBUG=True` in `.env` file -
 
-![Dashboard](https://github.com/KiranKumarMalik/College-ERP/blob/5b8ebd8faa29a3d6a4f329647ed42c45e6a745e8/ss/Screenshot%202025-04-22%20210520.png)
+- **How to generate/get the SECRET_KEY?**
+
+- Open your terminal (make sure your virtual environment is activated, it should be something like this - `(venv) PS C:\Users\asus\Django-eCommerce-Website`)
+
+- then type `django-admin shell`, and hit enter.
+
+- Paste the below code into your shell (use mouse right side button to paste the copied code, `as Ctrl+V may not work`)-
+
+  ```bash
+  from django.core.management.utils import get_random_secret_key
+  get_random_secret_key()
+  ```
+
+* Copy the `SECRET_KEY`(whatever you got in the output), and paste it in your `.env` file after `SECRET_KEY=`.
+
+* Now, you are good to go :) -
+
+5. **Apply database migrations:**
+
+   ```bash
+   python manage.py migrate
+   ```
+
+6. **Create a superuser (admin):**
+
+   ```bash
+   python manage.py createsuperuser
+   ```
+
+7. **Start the development server:**
+
+   ```bash
+   python manage.py runserver
+   ```
+
+8. **Open your web browser and navigate to:**
+   ```
+   http://127.0.0.1:8000/
+   ```
+
+### `Note`: After you navigate to the above url (`http://127.0.0.1:8000/`), and when you try to navigate to the login, signup, or any page which requires login, then you'll see an error coming from the Social Account Model. If you don't want to add google auth functionality in your project, you can simply remove all social account related things in the code. In case, if you want to proceed with the default, then here's how you can fix that error -
+
+- Follow this step: navigate to `http://127.0.0.1:8000/admin/`, enter your `username and password` which you used to create in `Step no: 6`
+- then follow this screenshot for better understanding :) -
+
+- ![Social Application Screenshot](Screenshots/google_auth-Change-social-application-Django-site-admin.png)
+
+- Simply, put your Google Client Id and Secret Id in those two places which I highlighted.
+
+- Now, you are ready to rock 🎉🤘🏻
+
+## Usage
+
+- **Admin Panel:** Access the admin panel at `http://127.0.0.1:8000/admin/` to manage products, orders, and users.
+- **Shopping:** Browse products, add items to the cart, proceed to checkout, and make payments using Razorpay.
+- **Profile:** Users can register, login, reset their password, view their order history, and update their profiles.
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and create a pull request with your proposed features, enhancements, or bug fixes.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## 💰 You can help me by Donating. Any small amount will help me to create more projects like this in future 😀. Otherwise, it is not necessary.
+
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/atulguptaa)
