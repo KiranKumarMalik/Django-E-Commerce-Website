@@ -39,7 +39,7 @@ This project is a full-fledged eCommerce website built using Django, a high-leve
 
 Facebook: https://developers.facebook.com/
 
-Razorpay:
+Razorpay: https://x.razorpay.com/auth
 
 ## Screenshots
 
